@@ -1,0 +1,93 @@
+# Entornos virtuales
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno
+.env
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Python
+*.pyc
+__pycache__/
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+logs/
+*.log
+
+# Archivos de base de datos
+*.sqlite3
+*.db
+
+# Archivos de configuración local
+*.local
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints
+
+# Archivos de PyCharm
+.idea/
+
+# Archivos de Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Archivos de entornos virtuales
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Archivos de caché de Python
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Archivos de configuración local
+local_settings.py
+db.sqlite3
+
+# Archivos de entorno virtual
+db.sqlite3-journal
+
+# Archivos de configuración de Python
+.python-version
+
+# Archivos de configuración de entornos virtuales
+Pipfile
+Pipfile.lock
+poetry.lock
+pyproject.toml
