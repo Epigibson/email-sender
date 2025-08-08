@@ -90,6 +90,10 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 async def check():
     return {"Bienvenid@ a la API de creación de correos temporales aleatorios": "API Funcionando correctamente"}
 
+@app.head("/", summary="Welcome message", description="Endpoint to check if the API is running.", tags=["Welcome message"])
+async def check_head():
+    return {"Bienvenid@ a la API de creación de correos temporales aleatorios": "API Funcionando correctamente"}
+
 # Include the main router.
 app.include_router(router=routerv1, prefix=settings.API_PREFIX)
 
@@ -110,5 +114,5 @@ def lambda_handler(event, context):
     return response
 
 
-# if __name__ == "__main__":
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
